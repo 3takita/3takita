@@ -51,7 +51,7 @@ public:
     //Precondition: Input string is a fully parenthesized expression of positive numbers (from 0 to 9), five operations (+, -, *, /, ^).
     //Postcondition: Returns a string of characters for the calculator program.
     string input() { //input
-        cout<<"Type a fully parenthesized arithmetic expression: "; //ask for user input
+        cout<<"\nType a fully parenthesized arithmetic expression: "; //ask for user input
         string _str;                //declare str
         getline(cin, _str);         //get user input n store it in str
         return _str;
@@ -66,6 +66,7 @@ public:
         nums.pop();        //pop off l
         int result = l+r;  //add l to r and save sum a result
         nums.push(result); //push result unto the num stack
+        cout<<l<<" + "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -77,6 +78,7 @@ public:
         nums.pop();        //pop off l
         int result = l - r;  //do l - r and save the difference as result
         nums.push(result); //push result unto the num stack
+        cout<<l<<" - "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -88,6 +90,7 @@ public:
         nums.pop();        //pop off l
         int result = l * r;  //do l * r and save the difference as result
         nums.push(result); //push result unto the num stack
+        cout<<l<<" * "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -99,6 +102,7 @@ public:
         nums.pop();        //pop off l
         int result = l / r;  //do l / r and save the difference as result
         nums.push(result); //push result unto the num stack
+        cout<<l<<" / "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -110,6 +114,7 @@ public:
         nums.pop();        //pop off l
         int result = pow(l, r);  //do l - r and save the difference as result
         nums.push(result); //push result unto the num stack
+        cout<<l<<" ^ "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument is of char data type, ranging from '0' to '9'.
