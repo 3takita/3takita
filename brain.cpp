@@ -11,8 +11,8 @@ void brain(const string str, stack<int>& nums) {
         for(int i=0; i<str.length(); i++) {
             if(isdigit(str[i])) {
                 char c = str[i];
-                int num = calculator.CharToInt(c); //convert char num to int num
-                nums.push(num);         //push converted num unto nums stack
+                int num = calculator.CharToInt(c); 
+                nums.push(num);        
             }else if(str[i]=='+') {
                 calculator.add(nums, str);
             }else if(str[i]=='-') {
@@ -26,7 +26,7 @@ void brain(const string str, stack<int>& nums) {
             }
         }
     }else{
-        cout<<"\nParanthesis not balanced\n"<<endl;
+        cout<<"\nParanthesis don`t match\n"<<endl;
     }
-    cout<<"Answer : "<<nums.top()<<endl;
+    cout<<"It evaluates to: "<<nums.top()<<endl;
 }
