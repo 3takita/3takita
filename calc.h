@@ -66,7 +66,6 @@ public:
         nums.pop();        //pop off l
         int result = l+r;  //add l to r and save sum a result
         nums.push(result); //push result unto the num stack
-        cout<<l<<" + "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -78,7 +77,6 @@ public:
         nums.pop();        //pop off l
         int result = l - r;  //do l - r and save the difference as result
         nums.push(result); //push result unto the num stack
-        cout<<l<<" - "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -90,7 +88,6 @@ public:
         nums.pop();        //pop off l
         int result = l * r;  //do l * r and save the difference as result
         nums.push(result); //push result unto the num stack
-        cout<<l<<" * "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -102,7 +99,6 @@ public:
         nums.pop();        //pop off l
         int result = l / r;  //do l / r and save the difference as result
         nums.push(result); //push result unto the num stack
-        cout<<l<<" / "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument must be a stack of positive numbers and input string.
@@ -114,7 +110,6 @@ public:
         nums.pop();        //pop off l
         int result = pow(l, r);  //do l - r and save the difference as result
         nums.push(result); //push result unto the num stack
-        cout<<l<<" ^ "<<r<<" = "<<endl;
     }
     
     //PreCondition: Argument is of char data type, ranging from '0' to '9'.
