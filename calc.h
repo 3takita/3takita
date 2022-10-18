@@ -51,13 +51,13 @@ public:
     //Precondition: Input string is a fully parenthesized expression of positive numbers (from 0 to 9), five operations (+, -, *, /, ^).
     //Postcondition: Returns a string of characters for the calculator program.
     string input() { //input
-        cout<<"Make your entry: "; //ask for user input
+        cout<<"Type a fully parenthesized arithmetic expression: "; //ask for user input
         string _str;                //declare str
         getline(cin, _str);         //get user input n store it in str
         return _str;
     }
     
-    //PreCondition: Argument must be a stack of positive numbers and input string.
+    //PreCondition: Argument is a stack of positive numbers and input string.
     //PostCondition: Pops the last two numbers in the number stack and pushes their sum unto the stack.
     void add(stack<int>& nums, const string str) { 
         int r=nums.top();  //save 1st nums top to r
