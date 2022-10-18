@@ -3,4 +3,4 @@
 #include <stack>
 #include "calc.h"
 
-void brain(const string str, stack<int>& nums);
+void brain(stack<int>& nums, const string str);
